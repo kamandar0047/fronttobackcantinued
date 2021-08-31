@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210830073220_AddDescriptionColumsSlides.cs" />
+    <Compile Remove="Migrations\20210830073220_AddDescriptionColumsSlides.Designer.cs" />
+    <Compile Remove="Migrations\20210831000247_testmigration.cs" />
+    <Compile Remove="Migrations\20210831000247_testmigration.Designer.cs" />
+    <Compile Remove="Migrations\20210831000730_sammekm.cs" />
+    <Compile Remove="Migrations\20210831000730_sammekm.Designer.cs" />
+    <Compile Remove="Migrations\20210831000847_saameekm.cs" />
+    <Compile Remove="Migrations\20210831000847_saameekm.Designer.cs" />
+    <Compile Remove="Migrations\20210831002107_saam.cs" />
+    <Compile Remove="Migrations\20210831002107_saam.Designer.cs" />
+    <Compile Remove="Migrations\20210831002158_saam1.cs" />
+    <Compile Remove="Migrations\20210831002158_saam1.Designer.cs" />
+    <Compile Remove="Migrations\20210831002353_initial.cs" />
+    <Compile Remove="Migrations\20210831002353_initial.Designer.cs" />
+    <Compile Remove="Migrations\20210831074102_birinci.cs" />
+    <Compile Remove="Migrations\20210831074102_birinci.Designer.cs" />
+    <Compile Remove="Migrations\20210831074543_CreateProductCategory.cs" />
+    <Compile Remove="Migrations\20210831074543_CreateProductCategory.Designer.cs" />
+    <Compile Remove="Migrations\20210831074856_CreateProductCategory.cs" />
+    <Compile Remove="Migrations\20210831074856_CreateProductCategory.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.18">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\js\script.js" />
+    <None Include="wwwroot\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\sass\lib\_common.scss" />
+    <None Include="wwwroot\sass\lib\_mixins.scss" />
+    <None Include="wwwroot\sass\lib\_varibales.scss" />
+    <None Include="wwwroot\sass\sections\_about.scss" />
+    <None Include="wwwroot\sass\sections\_accordion.scss" />
+    <None Include="wwwroot\sass\sections\_blog.scss" />
+    <None Include="wwwroot\sass\sections\_experts.scss" />
+    <None Include="wwwroot\sass\sections\_footer.scss" />
+    <None Include="wwwroot\sass\sections\_header.scss" />
+    <None Include="wwwroot\sass\sections\_instagram.scss" />
+    <None Include="wwwroot\sass\sections\_product-list.scss" />
+    <None Include="wwwroot\sass\sections\_product.scss" />
+    <None Include="wwwroot\sass\sections\_progress.scss" />
+    <None Include="wwwroot\sass\sections\_say.scss" />
+    <None Include="wwwroot\sass\sections\_shop-list.scss" />
+    <None Include="wwwroot\sass\sections\_slider.scss" />
+    <None Include="wwwroot\sass\sections\_subscribe.scss" />
+    <None Include="wwwroot\sass\sections\_tab.scss" />
+    <None Include="wwwroot\sass\style.scss" />
+  </ItemGroup>
+
+</Project>
