@@ -1,0 +1,59 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}   <div class="container">
+    <div class="row ">
+        <div class="col-12 d-flex justify-content-between">
+            <ul class="category-mobile d-md-none list-unstyled">
+                <li>
+                    <a href="" class="categories mr-2">Categories</a>
+                    <i class="fas fa-caret-down"></i>
+                    <ul class="category list-unstyled" style="display: none;">
+                        <li><a href="" data-id="all">All</a></li>
+
+                        @foreach (var category in Model)
+                        {
+                            <li><a href="" data-id="@category.Name.ToLower()">@category.Name.ToUpper()Popular</a></li>
+                        }
+                    </ul>
+                </li>
+            </ul>
+            <ul class="category d-none d-md-flex list-unstyled">
+
+                @foreach (var category in Model)
+                {
+                    <li><a href="" data-id="@category.Name.ToLower()">@category.Name.ToUpper()Popular</a></li>
+                }
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="" class="mr-2">Filter</a>
+                    <i class="fas fa-caret-down"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @foreach (var product in Model)
+    {
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+            <div class="product-item text-center" data-id="@product.Catagory.Name.ToLower()">
+                <div class="img">
+                    <a href="">
+                        <img src="~/img/@product.Images.ElementAt(0).Image" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="title mt-3">
+                    <h6>@product.Name</h6>
+                </div>
+                <div class="price">
+                    <span class="text-black-50">Add to cart</span>
+                    <span class="text-black-50">$@product.Price</span>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="row my-3 justify-content-center">
+    <input type="hidden" id="ProductCount" value="@ViewBag.ProductCount" />
+    <button class="btn btn-primary" id="LoadMore">  Load more </button>
+</div>

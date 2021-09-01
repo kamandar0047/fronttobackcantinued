@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    let skip = 12;
+    let take = 8;
+    let product_count = $("#ProductCount");
+    $(document).on("click", "#LoadMore", function () {
+        $.ajax({
+            url: "/Product/LoadMore?skip=${skip}&take=${take}",
+            type: "Get",
+            success: function (res) {
+                $(".parent").append(res);
+                skip += take;
+                if (skip >= product_count) {
+                    $("#LoadMore").remove();
+                }
+            }
+        })
+    }   )
     // HEADER
 
     $(document).on('click', '#search', function () {

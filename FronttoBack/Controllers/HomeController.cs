@@ -26,7 +26,7 @@ namespace FronttoBack.Controllers
                 Introductions = await _context.Introductions.ToListAsync(),
                 Slides = await _context.Slides.ToListAsync(),
                 Catagories = await _context.Catagories.Where(c => c.IsDeleted == false).ToListAsync(),
-                Products=await _context.Products.Where(p=>p.IsDeleted==false).Include(p=>p.Images).Include(p=>p.Catagory).ToListAsync()
+                Products=await _context.Products.Where(p=>p.IsDeleted==false).Include(p=>p.Images).Include(p=>p.Catagory).OrderByDescending(p=>p.Id).Take(8).ToListAsync()
             };
             return View(viewmodels);
         }

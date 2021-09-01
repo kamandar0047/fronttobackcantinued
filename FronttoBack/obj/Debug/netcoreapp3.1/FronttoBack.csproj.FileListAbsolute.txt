@@ -144,3 +144,5 @@ C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\bin\Debug\netcoreapp
 C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\Ideapad\OneDrive\Documents\FronttoBack\FronttoBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_productPartial.cshtml.g.cs
